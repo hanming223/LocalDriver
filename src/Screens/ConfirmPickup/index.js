@@ -4,6 +4,11 @@ import Styles from './styles';
 import MapView from 'react-native-maps';
 import Spinner from 'react-native-loading-spinner-overlay';
 
+var orderArray = [{'id': 1, 'name': 'Adidas', 'type': 'Clothes', 'count': '5', 'weight': '2.5'},
+                        {'id': 2, 'name': 'Nike', 'type': 'Shoes', 'count': '5', 'weight': '2.5'},
+                        {'id': 3, 'name': 'Argos Market', 'type': 'Products', 'count': '5', 'weight': '2.5'},
+                        {'id': 4, 'name': 'Stop Sho', 'type': 'Stop Shop', 'count': '5', 'weight': '2.5'}]
+                        
 export default class ConfirmPickup extends Component {
     
     constructor(props) {

@@ -21,6 +21,7 @@ export default class Home extends Component {
         })
 
         this.onPressItem = this.onPressItem.bind(this);
+        this.refreshOrderList = this.refreshOrderList.bind(this);
     }
 
     refreshOrderList(){
