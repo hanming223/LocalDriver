@@ -3,6 +3,7 @@ import { SafeAreaView, Image, StyleSheet, TouchableOpacity, TextInput, Text, But
 import Styles from './styles';
 import MapView from 'react-native-maps';
 import Spinner from 'react-native-loading-spinner-overlay';
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 
 export default class ReadyToPickup extends Component {
 
@@ -23,9 +24,10 @@ export default class ReadyToPickup extends Component {
 
     render() {
         return (
-
             <SafeAreaView style={Styles.safeArea}>
                 <Spinner visible={this.state.loading} textStyle={{color: '#FFF'}}/>
+
+                
 
                 <MapView
                     style={{width: '100%', aspectRatio: 1.5}}
@@ -80,7 +82,7 @@ export default class ReadyToPickup extends Component {
                     </TouchableOpacity>
                 </View>
                 
-
+                
             </SafeAreaView>
 
         )

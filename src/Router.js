@@ -16,6 +16,10 @@ import PickupComplete from "./Screens/PickupComplete";
 import PickupCompleteFeedback from "./Screens/PickupCompleteFeedback";
 
 
+import KeyboardManager from 'react-native-keyboard-manager'
+
+KeyboardManager.setEnable(true);
+
 export const HomeNav = StackNavigator({
 
     HomeScreen: { 
